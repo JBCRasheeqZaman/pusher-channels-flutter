@@ -231,6 +231,10 @@ class PusherChannelsFlutter {
     await methodChannel.invokeMethod('connect');
   }
 
+  Future<void> signIn() async {
+    await methodChannel.invokeMethod('signIn');
+  }
+
   Future<void> disconnect() async {
     await methodChannel.invokeMethod('disconnect');
   }
